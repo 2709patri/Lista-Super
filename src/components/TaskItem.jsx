@@ -12,7 +12,7 @@ const TaskItem = ({ task, onComplete, onDelete }) => {
   return (
     <div className={`task-item ${isCompleted ? 'completed' : ''}`}>
       <span>{task.name}</span>
-      <button onClick={handleComplete}>{isCompleted ? 'Desmarcar' : 'Completar'}</button>
+      <button onClick={handleComplete}>{isCompleted ? 'Desmarcar' : 'Comprado'}</button>
       <button onClick={() => onDelete(task.id)}>Eliminar</button>
     </div>
   );
